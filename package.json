@@ -1,9 +1,6 @@
 {
   "name": "project-movie-back-end",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.13.0"
-  },
   "description": "zid-be-project-movie-01-qualified",
   "main": "src/app.js",
   "scripts": {
@@ -17,8 +14,7 @@
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
     "start": "node src/server.js",
-    "server": "nodemon src/server.js",
-    "client": "npm start --prefix client",
+    "start:dev": "nodemon src/server.js",
     "start:solution": "docker-compose up --build",
     "test": "jest",
     "test:solution": "docker-compose build && docker-compose run --rm api npm test && docker-compose down"
